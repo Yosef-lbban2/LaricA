@@ -10945,7 +10945,7 @@ send(msg.chat_id_,msg.id_,'• لا يمكنك استخدام البوت\n• ع
 return false 
 end
 Text = [[
-*مطور البوت bot dev](t.me/yousef_labban1)
+*𝗝ْ𝗨ِst #َ𝗚𝗿ِ𝗼𝘂ِ𝗽َُ!ْ𝗦 𝗧ِ𝘂ِ𝗺ّ𝗯َ𝗹َُ!r⤹* [◜𝗟𝗮ََِ𝗥ِ!َْ𝗖𝗮 ُ𝗧َ𝗘ِ𝗮َِ𝗺 🦂](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -11679,7 +11679,7 @@ return false
 end
 if text == 'قناة السورس 📡 .' then
 Text = [[
-*مطور البوت bot dev](t.me/yousef_labban1)
+*𝗝ْ𝗨ِst #َ𝗚𝗿ِ𝗼𝘂ِ𝗽َُ!ْ𝗦 𝗧ِ𝘂ِ𝗺ّ𝗯َ𝗹َُ!r⤹* [◜𝗟𝗮ََِ𝗥ِ!َْ𝗖𝗮 ُ𝗧َ𝗘ِ𝗮َِ𝗺 🦂](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
