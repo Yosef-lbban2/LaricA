@@ -627,7 +627,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس لاريكا الرسمي",
+performer_ = "سورس يوسف الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -1925,7 +1925,7 @@ database:del(bot_id.."LaricA:Lock:Bot:kick"..msg.chat_id_)
 Reply_Status(msg,msg.sender_user_id_,"unlock","• تم فـتح البوتات")  
 return false
 end 
-if text == 'اريد بوت' or text == 'اريد مطور' or text == 'خوش سورس' or text == 'سورس لاريكا' or text == 'اريد بوت تمبلر' or text == 'سورس لاريكا' then
+if text == 'اريد بوت' or text == 'اريد مطور' or text == 'خوش سورس' or text == 'سورس يوسف' or text == 'اريد بوت تمبلر' or text == 'سورس يوسف' then
 Text = [[
 •- DEV @labban1 مبرمج بوتات•
 ]]
@@ -1935,7 +1935,7 @@ end
 if text == 'اريد انصب بوت' or text == 'عجبني البوت' or text == 'منو منصبلك' or text == 'منو مطور السورس' or text == 'مو سورس ظيم' or text == 'انصبلك'  or text == 'انصبلك بوت' then
 Text = [[
 اهلا عزيزي
-متوفر تنصيب بوتات ع سورس لاريكا
+متوفر تنصيب بوتات ع سورس يوسف
 احدث واسرع البوتات وضمان الثقه
 للاستفسار راسل المطور @labban1
 ]]
@@ -5889,7 +5889,7 @@ if text == "الرابط" then
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Teext = '🦇• LinK GrOup :\n ['..ta.title_..']('..linkgpp.result..')' 
+local Teext = '🌹• LinK GrOup :\n ['..ta.title_..']('..linkgpp.result..')' 
 local inline = {{{text = ta.title_, url=linkgpp.result}},} 
 send_inline_key(msg.chat_id_,Teext,nil,inline,msg.id_/2097152/0.5) 
 else 
@@ -8394,7 +8394,7 @@ database:set(bot_id.."LaricA:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "• تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."LaricA:Name:Bot") or "لاريكا") then
+if text == (database:get(bot_id.."LaricA:Name:Bot") or "يوسف") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -8410,7 +8410,7 @@ end
 
 return false
 end
-Namebot = (database:get(bot_id.."LaricA:Name:Bot") or "لاريكا")
+Namebot = (database:get(bot_id.."LaricA:Name:Bot") or "يوسف")
 local namebot = {
 "انه نايم نايم🦦",
 " هاحجي كول اني "..Namebot,
@@ -8541,8 +8541,8 @@ end
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."LaricA:Name:Bot") or "لاريكا")
-send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] 🦇 ") 
+Namebot = (database:get(bot_id.."LaricA:Name:Bot") or "يوسف")
+send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] 🌹 ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
 if DevLaricA(msg) then
@@ -9637,7 +9637,7 @@ name = string.gsub(name,"قرش","🦈")
 name = string.gsub(name,"نمر","🐅")
 name = string.gsub(name,"اخطبوط","🐙")
 name = string.gsub(name,"سمكه","🐟")
-name = string.gsub(name,"خفاش","🦇")
+name = string.gsub(name,"خفاش","🌹")
 name = string.gsub(name,"اسد","🦁")
 name = string.gsub(name,"فأر","🐭")
 name = string.gsub(name,"ذئب","🐺")
@@ -10414,12 +10414,12 @@ local Text =[[
 • كشف الارتباط
 • كشف الحيوان
 • نسبه الغباء
-• العاب متطوره - العاب لاريكا](t.me/yousef_labban1)
+• العاب متطوره - العاب يوسف](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.', url="t.me/yousef_labban1"},
+{text = ' ˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🌹.', url="t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -10547,7 +10547,7 @@ if audios.Info == true then
 local Text ='• تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.',url="t.me/yousef_labban1 "}},
+{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🌹.',url="t.me/yousef_labban1 "}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10562,7 +10562,7 @@ if audios.Info == true then
 local Text ='• تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.',url="t.me/yousef_labban1"}},
+{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🌹.',url="t.me/yousef_labban1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10774,7 +10774,7 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n• اهلا بك في متجر ملفات لاريكا\n• يوجد في المتجر ملف الردود\n• يتم ادراج الملفات في التحديثات القادمه \n  ━═━═━═━\n"
+local TextS = "\n• اهلا بك في متجر ملفات يوسف\n• يوجد في المتجر ملف الردود\n• يتم ادراج الملفات في التحديثات القادمه \n  ━═━═━═━\n"
 local TextE = "\n  ━═━═━═━\n• تدل علامة (✔) الملف مفعل\n".."• تدل علامة (✖) الملف معطل\n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -10884,9 +10884,9 @@ if text == "التاريخ" then
 local ramsesj20 =  "\n التاريخ : "..os.date("%Y/%m/%d")
 send(msg.chat_id_, msg.id_,ramsesj20)
 end
-if text == 'العاب لاريكا' or text == 'العاب متطوره' or text == 'العاب متطوره' then  
+if text == 'العاب يوسف' or text == 'العاب متطوره' or text == 'العاب متطوره' then  
 local Text = [[  
- 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 𝗈𝖿 𝖺𝖽𝗏𝖺𝗇𝖼𝖾𝖽 𝗀𝖺𝗆𝖾𝗌 𝗌𝗈𝗎𝗋𝖼𝖾 𝗅𝖺𝗋𝗂𝖼𝖺 𝗉𝗋𝖾𝖿𝖾𝗋 𝗍𝗈 𝖼𝗁𝗈𝗈𝗌𝖾 𝖺 𝗀𝖺𝗆𝖾 𝖿𝗋𝗈𝗆 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 🦇. 
+ 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 𝗈𝖿 𝖺𝖽𝗏𝖺𝗇𝖼𝖾𝖽 𝗀𝖺𝗆𝖾𝗌 𝗌𝗈𝗎𝗋𝖼𝖾 𝗅𝖺𝗋𝗂𝖼𝖺 𝗉𝗋𝖾𝖿𝖾𝗋 𝗍𝗈 𝖼𝗁𝗈𝗈𝗌𝖾 𝖺 𝗀𝖺𝗆𝖾 𝖿𝗋𝗈𝗆 𝗍𝗁𝖾 𝗅𝗂𝗌𝗍 🌹. 
 ]]  
 keyboard = {}   
 keyboard.inline_keyboard = {  
@@ -11137,7 +11137,7 @@ Text = [[
 • كشف الارتباط
 • كشف الحيوان
 • نسبه الغباء
-• العاب متطوره - العاب لاريكا
+• العاب متطوره - العاب يوسف
 [٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
@@ -11654,7 +11654,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 Test = start
 else
-Texti = "*ᯎ * اهلا بك في "..Namebot.."* . 🦇*\n\n*ᯎ *حماية المجموعات \n\n*ᯎ * يمكنك اضافتي الى مجموعتك \n\n*ᯎ * للعب داخل البوت ارسل  : /play ."
+Texti = "*ᯎ * اهلا بك في "..Namebot.."* . 🌹*\n\n*ᯎ *حماية المجموعات \n\n*ᯎ * يمكنك اضافتي الى مجموعتك \n\n*ᯎ * للعب داخل البوت ارسل  : /play ."
 keyboard = {} 
 keyboard.inline_keyboard ={{{text = "اضغط لاضافتي", switch_inline_query="للتفعيل ارفعني مشرف وارسل تفعيل في المجموعه ."}}}
 local msg_id = msg.id_/2097152/0.5
@@ -12636,7 +12636,7 @@ end
 if Text and Text:match('(.*)/Ban:Cheking') and Constructor(data) then
 if tonumber(Text:match('(.*)/Ban:Cheking')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."Ban:Cheking"..data.chat_id_)
-local Textedit = '🦇| تم تفعيل الطرد '
+local Textedit = '🌹| تم تفعيل الطرد '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12649,7 +12649,7 @@ end
 elseif Text and Text:match('(.*)/Add:Group:Cheking') and Constructor(data) then
 if tonumber(Text:match('(.*)/Add:Group:Cheking')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."Add:Group:Cheking"..data.chat_id_)
-local Textedit = '🦇| تم تفعيل الرفع '
+local Textedit = '🌹| تم تفعيل الرفع '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12662,7 +12662,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Link_Group') then
 if tonumber(Text:match('(.*)/LaricA:Link_Group')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Link_Group"..data.chat_id_,true) 
-local Textedit = '🦇| تم تفعيل جلب الرابط '
+local Textedit = '🌹| تم تفعيل جلب الرابط '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12675,7 +12675,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Chek:Welcome') then
 if tonumber(Text:match('(.*)/LaricA:Chek:Welcome')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Chek:Welcome"..data.chat_id_,true) 
-local Textedit = '🦇| تم تفعيل الترحيب '
+local Textedit = '🌹| تم تفعيل الترحيب '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12688,7 +12688,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Reply:Manager') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:Reply:Manager')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Reply:Manager"..data.chat_id_)  
-local Textedit = '🦇| تم تفعيل ردود المدير '
+local Textedit = '🌹| تم تفعيل ردود المدير '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12701,7 +12701,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Reply:Sudo') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:Reply:Sudo')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Reply:Sudo"..data.chat_id_)  
-local Textedit = '🦇| تم تفعيل ردود المطور '
+local Textedit = '🌹| تم تفعيل ردود المطور '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12714,7 +12714,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Kick:Me') then
 if tonumber(Text:match('(.*)/LaricA:Kick:Me')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Kick:Me"..data.chat_id_)  
-local Textedit = '🦇| تم تفعيل اطردني '
+local Textedit = '🌹| تم تفعيل اطردني '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12727,7 +12727,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Left:Bot') and DevLaricA(data) then  
 if tonumber(Text:match('(.*)/LaricA:Left:Bot')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Left:Bot"..data.chat_id_)  
-local Textedit = '🦇| تم تفعيل المغادره '
+local Textedit = '🌹| تم تفعيل المغادره '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12740,7 +12740,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Status:Bc') and DevLaricA(data) then  
 if tonumber(Text:match('(.*)/LaricA:Status:Bc')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Status:Bc") 
-local Textedit = '🦇| تم تفعيل الاذاعه '
+local Textedit = '🌹| تم تفعيل الاذاعه '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12753,7 +12753,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Fun_Bots') and Owner(data) then    
 if tonumber(Text:match('(.*)/LaricA:Fun_Bots')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Fun_Bots"..data.chat_id_)
-local Textedit = '🦇| تم تفعيل اوامر التحشيش '
+local Textedit = '🌹| تم تفعيل اوامر التحشيش '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12766,7 +12766,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Lock:ID:Bot') and Owner(data) then  
 if tonumber(Text:match('(.*)/LaricA:Lock:ID:Bot')) == tonumber(data.sender_user_id_) then
 database:del(bot_id..'LaricA:Lock:ID:Bot'..data.chat_id_) 
-local Textedit = '🦇| تم تفعيل الايدي '
+local Textedit = '🌹| تم تفعيل الايدي '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12792,7 +12792,7 @@ end
 elseif Text and Text:match('(.*)/Lock:delmsg') and BasicConstructor(data) then   
 if tonumber(Text:match('(.*)/Lock:delmsg')) == tonumber(data.sender_user_id_) then
 database:set(bot_id..'Lock:delmsg'..data.chat_id_,true) 
-local Textedit = '🦇| تم تفعيل التنظيف '
+local Textedit = '🌹| تم تفعيل التنظيف '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12805,7 +12805,7 @@ end
 elseif Text and Text:match('(.*)/Tshak:Lock:Games') and Owner(data) then  
 if tonumber(Text:match('(.*)/Tshak:Lock:Games')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."Tshak:Lock:Games"..data.chat_id_,true) 
-local Textedit = '🦇| تم تفعيل الالعاب '
+local Textedit = '🌹| تم تفعيل الالعاب '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12818,7 +12818,7 @@ end
 elseif Text and Text:match('(.*)/Cick:all') and Constructor(data) then  
 if tonumber(Text:match('(.*)/Cick:all')) == tonumber(data.sender_user_id_) then
 database:del(bot_id..'Cick:all'..data.chat_id_)  
-local Textedit = '🦇| تم تفعيل التاك للكل '
+local Textedit = '🌹| تم تفعيل التاك للكل '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12831,7 +12831,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:zhrf_Bots') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:zhrf_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:zhrf_Bots"..data.chat_id_,"open")
-local Textedit = '🦇| تم تفعيل الزخرفه '
+local Textedit = '🌹| تم تفعيل الزخرفه '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12844,7 +12844,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:brj_Bots') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:brj_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:brj_Bots"..data.chat_id_,"open")
-local Textedit = '🦇|تم تفعيل الابراج '
+local Textedit = '🌹|تم تفعيل الابراج '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12857,7 +12857,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:age_Bots') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:age_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:age_Bots"..data.chat_id_,"open")
-local Textedit = '🦇| تم تفعيل حساب العمر '
+local Textedit = '🌹| تم تفعيل حساب العمر '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12870,7 +12870,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:movie_bot') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:movie_bot')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:movie_bot"..data.chat_id_,"open")
-local Textedit = '🦇| تم تفعيل الافلام '
+local Textedit = '🌹| تم تفعيل الافلام '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12883,7 +12883,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:Free:Add:Bots') and DevLaricA(data) then  
 if tonumber(Text:match('(.*)/LaricA:Free:Add:Bots')) == tonumber(data.sender_user_id_) then
 database:del(bot_id..'LaricA:Free:Add:Bots') 
-local Textedit = '🦇| تم تفعيل البوت الخدمي '
+local Textedit = '🌹| تم تفعيل البوت الخدمي '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12896,7 +12896,7 @@ end
 elseif Text and Text:match('(.*)/LaricA:insta_bot') and Owner(data) then
 if tonumber(Text:match('(.*)/LaricA:insta_bot')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:insta_bot"..data.chat_id_,"open")
-local Textedit = '🦇| تم تفعيل الانستا '
+local Textedit = '🌹| تم تفعيل الانستا '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12910,7 +12910,7 @@ end
 if Text and Text:match('(.*)/unBan:Cheking') and Constructor(data) then
 if tonumber(Text:match('(.*)/unBan:Cheking')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."Ban:Cheking"..data.chat_id_,"true")
-local Textedit = '🦇| تم تعطيل الطرد '
+local Textedit = '🌹| تم تعطيل الطرد '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12923,7 +12923,7 @@ end
 elseif Text and Text:match('(.*)/unAdd:Group:Cheking') and Constructor(data) then
 if tonumber(Text:match('(.*)/unAdd:Group:Cheking')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."Add:Group:Cheking"..data.chat_id_,"true")
-local Textedit = '🦇| تم تعطيل الرفع '
+local Textedit = '🌹| تم تعطيل الرفع '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12936,7 +12936,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Link_Group') then
 if tonumber(Text:match('(.*)/unLaricA:Link_Group')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Link_Group"..data.chat_id_) 
-local Textedit = '🦇| تم تعطيل جلب الرابط '
+local Textedit = '🌹| تم تعطيل جلب الرابط '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12949,7 +12949,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Chek:Welcome') then
 if tonumber(Text:match('(.*)/unLaricA:Chek:Welcome')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."LaricA:Chek:Welcome"..data.chat_id_) 
-local Textedit = '🦇| تم تعطيل الترحيب '
+local Textedit = '🌹| تم تعطيل الترحيب '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12962,7 +12962,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Reply:Manager') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:Reply:Manager')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Reply:Manager"..data.chat_id_,true)  
-local Textedit = '🦇| تم تعطيل ردود المدير '
+local Textedit = '🌹| تم تعطيل ردود المدير '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12975,7 +12975,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Reply:Sudo') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:Reply:Sudo')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Reply:Sudo"..data.chat_id_,true)   
-local Textedit = '🦇| تم تعطيل ردود المطور '
+local Textedit = '🌹| تم تعطيل ردود المطور '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12988,7 +12988,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Kick:Me') then
 if tonumber(Text:match('(.*)/unLaricA:Kick:Me')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Kick:Me"..data.chat_id_,true)  
-local Textedit = '🦇| تم تعطيل اطردني '
+local Textedit = '🌹| تم تعطيل اطردني '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13001,7 +13001,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Left:Bot') and DevLaricA(data) then  
 if tonumber(Text:match('(.*)/unLaricA:Left:Bot')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Left:Bot"..data.chat_id_,true)   
-local Textedit = '🦇| تم تعطيل المغادره '
+local Textedit = '🌹| تم تعطيل المغادره '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13014,7 +13014,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Status:Bc') and DevLaricA(data) then  
 if tonumber(Text:match('(.*)/unLaricA:Status:Bc')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Status:Bc",true) 
-local Textedit = '🦇| تم تعطيل الاذاعه '
+local Textedit = '🌹| تم تعطيل الاذاعه '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13027,7 +13027,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Fun_Bots') and Owner(data) then    
 if tonumber(Text:match('(.*)/unLaricA:Fun_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:Fun_Bots"..data.chat_id_,"true")
-local Textedit = '🦇| تم تعطيل اوامر التحشيش '
+local Textedit = '🌹| تم تعطيل اوامر التحشيش '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13040,7 +13040,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Lock:ID:Bot') and Owner(data) then  
 if tonumber(Text:match('(.*)/unLaricA:Lock:ID:Bot')) == tonumber(data.sender_user_id_) then
 database:set(bot_id..'LaricA:Lock:ID:Bot'..data.chat_id_,true) 
-local Textedit = '🦇| تم تعطيل الايدي '
+local Textedit = '🌹| تم تعطيل الايدي '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13053,7 +13053,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Lock:ID:Bot:Photo') and Owner(data) then  
 if tonumber(Text:match('(.*)/unLaricA:Lock:ID:Bot:Photo')) == tonumber(data.sender_user_id_) then
 database:set(bot_id..'LaricA:Lock:ID:Bot:Photo'..data.chat_id_,true) 
-local Textedit = '🦇| تم تعطيل الايدي بالصوره '
+local Textedit = '🌹| تم تعطيل الايدي بالصوره '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13066,7 +13066,7 @@ end
 elseif Text and Text:match('(.*)/unLock:delmsg') and BasicConstructor(data) then   
 if tonumber(Text:match('(.*)/unLock:delmsg')) == tonumber(data.sender_user_id_) then
 database:del(bot_id..'Lock:delmsg'..data.chat_id_) 
-local Textedit = '🦇| تم تعطيل التنظيف '
+local Textedit = '🌹| تم تعطيل التنظيف '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13079,7 +13079,7 @@ end
 elseif Text and Text:match('(.*)/unTshak:Lock:Games') and Owner(data) then  
 if tonumber(Text:match('(.*)/unTshak:Lock:Games')) == tonumber(data.sender_user_id_) then
 database:del(bot_id.."Tshak:Lock:Games"..data.chat_id_) 
-local Textedit = '🦇| تم تعطيل الالعاب '
+local Textedit = '🌹| تم تعطيل الالعاب '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13092,7 +13092,7 @@ end
 elseif Text and Text:match('(.*)/unCick:all') and Constructor(data) then  
 if tonumber(Text:match('(.*)/unCick:all')) == tonumber(data.sender_user_id_) then
 database:set(bot_id..'Cick:all'..data.chat_id_,true)  
-local Textedit = '🦇| تم تعطيل تاك للكل '
+local Textedit = '🌹| تم تعطيل تاك للكل '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13105,7 +13105,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:zhrf_Bots') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:zhrf_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:zhrf_Bots"..data.chat_id_,"close")
-local Textedit = '🦇| تم تعطيل الزخرفه '
+local Textedit = '🌹| تم تعطيل الزخرفه '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13118,7 +13118,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:brj_Bots') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:brj_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:brj_Bots"..data.chat_id_,"close")
-local Textedit = '🦇| تم تعطيل الابراج '
+local Textedit = '🌹| تم تعطيل الابراج '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13131,7 +13131,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:age_Bots') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:age_Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:age_Bots"..data.chat_id_,"close")
-local Textedit = '🦇| تم تعطيل حساب العمر '
+local Textedit = '🌹| تم تعطيل حساب العمر '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13144,7 +13144,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:movie_bot') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:movie_bot')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:movie_bot"..data.chat_id_,"close")
-local Textedit = '🦇| تم تعطيل الافلام '
+local Textedit = '🌹| تم تعطيل الافلام '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13157,7 +13157,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:Free:Add:Bots') and DevLaricA(data) then  
 if tonumber(Text:match('(.*)/unLaricA:Free:Add:Bots')) == tonumber(data.sender_user_id_) then
 database:set(bot_id..'LaricA:Free:Add:Bots',true) 
-local Textedit = '🦇| تم تعطيل البوت الخدمي '
+local Textedit = '🌹| تم تعطيل البوت الخدمي '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13170,7 +13170,7 @@ end
 elseif Text and Text:match('(.*)/unLaricA:insta_bot') and Owner(data) then
 if tonumber(Text:match('(.*)/unLaricA:insta_bot')) == tonumber(data.sender_user_id_) then
 database:set(bot_id.."LaricA:insta_bot"..data.chat_id_,"close")
-local Textedit = '🦇| تم تعطيل الانستا '
+local Textedit = '🌹| تم تعطيل الانستا '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13182,7 +13182,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessageText?ch
 end
 elseif Text and Text:match('(.*)/homeaddwd')  then
 if tonumber(Text:match('(.*)/homeaddwd')) == tonumber(data.sender_user_id_) then
-local Textedit = '🦇| اوامر التحكم في التفعيل والتعطيل '
+local Textedit = '🌹| اوامر التحكم في التفعيل والتعطيل '
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13802,7 +13802,7 @@ end
 elseif Text and Text:match('(.*)/help') then
 if tonumber(Text:match('(.*)/help')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𝙒𝙚𝙡𝘾𝙤𝙢𝙚 𝙏𝙤 𝙎𝙤𝙪𝙍𝙘𝙚 [𓌹 𝘓𝘢𝘙𝘪𝘤𝘢 𓌺 🦇](t.me/yousef_labban1)
+𝙒𝙚𝙡𝘾𝙤𝙢𝙚 𝙏𝙤 𝙎𝙤𝙪𝙍𝙘𝙚 [𓌹 𝘓𝘢𝘙𝘪𝘤𝘢 𓌺 🌹](t.me/yousef_labban1)
 𝙃𝙚𝙧𝙚 𝙞𝙎 𝙩𝙃𝙚 𝘾𝙤𝙉𝙩𝙧𝙤𝙡 𝙋𝙖𝙉𝙚𝙡 ⤵️ 
 ]]
 keyboard = {} 
@@ -13845,7 +13845,7 @@ local Teext =[[
 • كشف الارتباط
 • كشف الحيوان
 • نسبه الغباء
-• العاب متطوره - العاب لاريكا
+• العاب متطوره - العاب يوسف
 [٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
@@ -14064,7 +14064,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."LaricA:Name:Bot") or "لاريكا")
+local Name_Bot = (database:get(bot_id.."LaricA:Name:Bot") or "يوسف")
 if not database:get(bot_id.."LaricA:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
@@ -14258,7 +14258,7 @@ end
 if text == "نسبه الخيانة" or text == "نسبه الخيانة" and msg.reply_to_message_id_ ~= 0 and Addictive(msg) then
 if not database:get(bot_id..'Cick:hen'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":hen_Bots"..msg.chat_id_,"sendonoe")
-Text = '🦇┇الان ارسل اسم الشخص :'
+Text = '🌹┇الان ارسل اسم الشخص :'
 send(msg.chat_id_, msg.id_,Text) 
 end
 end
