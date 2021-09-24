@@ -55,13 +55,13 @@ end
 function dl_cb(t,s)
 end
 function DevLaricAe(user)  
-local IZlZ7I_Sudo = false  
+local labban1_Sudo = false  
 for k,v in pairs(List_Sudos) do  
 if user == v then  
-IZlZ7I_Sudo = true  
+labban1_Sudo = true  
 end  
 end  
-return IZlZ7I_Sudo  
+return labban1_Sudo  
 end 
 
 function VIP_DeV(msg)  
@@ -7613,10 +7613,10 @@ end
 
 return false
 end
-tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,IZlZ7I)
+tdcli_function({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""), offset_ = 0,limit_ = 200},function(ta,labban1)
 local t = "\n┆ ⤹ ِ𝙢𝙚ِ𝙢ِ𝙗𝙚ِ𝙧𝙨 ٰ𝙡𝙞𝙨𝙩 †\n  ━═━═━═━\n"
 x = 0
-local list = IZlZ7I.members_
+local list = labban1.members_
 for k, v in pairs(list) do
 x = x + 1
 if database:get(bot_id.."LaricA:User:Name"..v.user_id_) then
@@ -7697,12 +7697,12 @@ return false
 end 
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},function(arg,data) 
-local IZlZ7I = "• عدد الادمنيه : "..data.administrator_count_..
+local labban1 = "• عدد الادمنيه : "..data.administrator_count_..
 "\n\n• عدد المطرودين : "..data.kicked_count_..
 "\n\n• عدد الاعضاء : "..data.member_count_..
 "\n\n• عدد رسائل القروب : "..(msg.id_/2097152/0.5)..
 "\n\n• اسم المجموعه : ["..ta.title_.."]"
-send(msg.chat_id_, msg.id_, IZlZ7I) 
+send(msg.chat_id_, msg.id_, labban1) 
 end,nil)
 end,nil)
 end 
@@ -9218,7 +9218,7 @@ return false
 end
 if not database:sismember(bot_id..'LaricA:Spam:Group'..msg.sender_user_id_,text) then
 database:sadd(bot_id.."LaricA:Spam:Group"..msg.sender_user_id_,text) 
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,IZlZ7I,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = msg.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,labban1,success) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data) 
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,deata) 
 if deata.status_.ID == "ChatMemberStatusCreator" then 
@@ -9246,7 +9246,7 @@ local Status_Gps = database:get(bot_id.."LaricA:Comd:New:rt:User:"..msg.chat_id_
 local message_edit = database:get(bot_id..'LaricA:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Num_Games = database:get(bot_id.."LaricA:Add:Num"..msg.chat_id_..msg.sender_user_id_) or 0
 local Add_Mem = database:get(bot_id.."LaricA:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
-local Total_Photp = (IZlZ7I.total_count_ or 0)
+local Total_Photp = (labban1.total_count_ or 0)
 local Texting = {
 'ئمنورني يا وردة 🤣💝',
 "تراا أوفر؟ 🦦🤍 ",
@@ -9258,7 +9258,7 @@ local Texting = {
 local Description = Texting[math.random(#Texting)]
 local get_id = database:get(bot_id.."LaricA:Klesh:Id:Bot"..msg.chat_id_) or database:get(bot_id.."LaricA:KleshIDALLBOT")
 if not database:get(bot_id..'LaricA:Lock:ID:Bot:Photo'..msg.chat_id_) then
-if IZlZ7I.photos_[0] then
+if labban1.photos_[0] then
 if get_id then
 local get_id = get_id:gsub('#AddMem',Add_Mem) 
 local get_id = get_id:gsub('#id',Id) 
@@ -9271,7 +9271,7 @@ local get_id = get_id:gsub('#Description',Description)
 local get_id = get_id:gsub('#game',Num_Games) 
 local get_id = get_id:gsub('#photos',Total_Photp) 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(get_id)..'&photo='..IZlZ7I.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(get_id)..'&photo='..labban1.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id) 
 else
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -9281,7 +9281,7 @@ keyboard.inline_keyboard = {
 }
 local msg_id = msg.id_/2097152/0.5
 local texte = '🔖꒐ '..Description..'\n🏷꒐ ايديك : '..Id..'\n🚹꒐ يوزرك : '..UserName_User..'\n⏏️꒐ موقعك : '..Status_Gps..'\n💭꒐ رسائلك : '..NumMsg..' \n📊꒐ تفاعلك : '..TotalMsg..'\n🗯꒐ الالعاب : '..Num_Games
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(texte)..'&photo='..IZlZ7I.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id='..msg.chat_id_..'&caption='..URL.escape(texte)..'&photo='..labban1.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 else
 local texte = '\n*🏷꒐ ايديك : '..Id..'\n🚹꒐ يوزرك : * ['..UserName_User..']*\n⏏️꒐ موقعك : '..Status_Gps..'\n💭꒐ رسائلك : '..NumMsg..' \n📊꒐ تفاعلك : '..TotalMsg..'\n🗯꒐ الالعاب : '..Num_Games..'*'
@@ -10137,8 +10137,8 @@ end
 
 return false
 end
-IZlZ7I = text:match("^اضف رسائل (%d+)$")
-database:set(bot_id.."Tshak:id:user"..msg.chat_id_,IZlZ7I)  
+labban1 = text:match("^اضف رسائل (%d+)$")
+database:set(bot_id.."Tshak:id:user"..msg.chat_id_,labban1)  
 database:setex(bot_id.."Tshak:numadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_, "✉︙ارسل لي عدد الرسائل الان") 
 return false
@@ -10159,8 +10159,8 @@ end
 
 return false
 end
-IZlZ7I = text:match("^اضف مجوهرات (%d+)$")
-database:set(bot_id.."Tshak:idgem:user"..msg.chat_id_,IZlZ7I)  
+labban1 = text:match("^اضف مجوهرات (%d+)$")
+database:set(bot_id.."Tshak:idgem:user"..msg.chat_id_,labban1)  
 database:setex(bot_id.."Tshak:gemadd:user" .. msg.chat_id_ .. "" .. msg.sender_user_id_, 120, true)  
 send(msg.chat_id_, msg.id_, "• ارسل لي عدد المجوهرات الان") 
 return false
@@ -10276,19 +10276,19 @@ if #group == i then
 if (w + q) == 0 then
 send(msg.chat_id_, msg.id_,'• لا توجد مجموعات وهميه ')   
 else
-local IZlZ7I = (w + q)
-local sendok = #group - IZlZ7I
+local labban1 = (w + q)
+local sendok = #group - labban1
 if q == 0 then
-IZlZ7I = ''
+labban1 = ''
 else
-IZlZ7I = '\n• تم ازالة ~ '..q..' مجموعات من البوت'
+labban1 = '\n• تم ازالة ~ '..q..' مجموعات من البوت'
 end
 if w == 0 then
 storm = ''
 else
 storm = '\n• تم ازالة ~'..w..' مجموعه لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,'*• عدد المجموعات الان ~ '..#group..' مجموعه '..storm..''..IZlZ7I..'\n• اصبح عدد المجموعات الان ~ '..sendok..' مجموعات*\n')   
+send(msg.chat_id_, msg.id_,'*• عدد المجموعات الان ~ '..#group..' مجموعه '..storm..''..labban1..'\n• اصبح عدد المجموعات الان ~ '..sendok..' مجموعات*\n')   
 end
 end
 end,nil)
@@ -11929,19 +11929,19 @@ if #group == i then
 if (w + q) == 0 then
 send(msg.chat_id_, msg.id_,'• لا توجد مجموعات وهميه ')   
 else
-local IZlZ7I = (w + q)
-local sendok = #group - IZlZ7I
+local labban1 = (w + q)
+local sendok = #group - labban1
 if q == 0 then
-IZlZ7I = ''
+labban1 = ''
 else
-IZlZ7I = '\n• تم ازالة ~ '..q..' مجموعات من البوت'
+labban1 = '\n• تم ازالة ~ '..q..' مجموعات من البوت'
 end
 if w == 0 then
 storm = ''
 else
 storm = '\n• تم ازالة ~'..w..' مجموعه لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,'*• عدد المجموعات الان ~ '..#group..' مجموعه '..storm..''..IZlZ7I..'\n• اصبح عدد المجموعات الان ~ '..sendok..' مجموعات*\n')   
+send(msg.chat_id_, msg.id_,'*• عدد المجموعات الان ~ '..#group..' مجموعه '..storm..''..labban1..'\n• اصبح عدد المجموعات الان ~ '..sendok..' مجموعات*\n')   
 end
 end
 end,nil)
@@ -13258,7 +13258,7 @@ end
 
 if Text and Text:match('(.*)/ideengphoto') then
 if tonumber(Text:match('(.*)/ideengphoto')) == tonumber(data.sender_user_id_) then
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,IZlZ7I,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,labban1,success) 
 tdcli_function ({ID = "GetUser",user_id_ = data.sender_user_id_},function(arg,date) 
 tdcli_function ({ID = "GetChatMember",chat_id_ = data.chat_id_,user_id_ = data.sender_user_id_},function(arg,deata) 
 if deata.status_.ID == "ChatMemberStatusCreator" then 
@@ -13285,7 +13285,7 @@ local Status_Gps = database:get(bot_id.."LaricA:Comd:New:rt:User:"..data.chat_id
 local message_edit = database:get(bot_id..'LaricA:message_edit'..data.chat_id_..data.sender_user_id_) or 0
 local Num_Games = database:get(bot_id.."LaricA:Add:Num"..data.chat_id_..data.sender_user_id_) or 0
 local Add_Mem = database:get(bot_id.."LaricA:Add:Memp"..data.chat_id_..":"..data.sender_user_id_) or 0
-local Total_Photp = (IZlZ7I.total_count_ or 0)
+local Total_Photp = (labban1.total_count_ or 0)
 local Texting = {
 'ئمنورني يا وردة 🤣💝',
 "تراا أوفر؟ 🦦🤍 ",
@@ -13310,7 +13310,7 @@ end
 end
 if Text and Text:match('(.*)/idearpphoto') then
 if tonumber(Text:match('(.*)/idearpphoto')) == tonumber(data.sender_user_id_) then
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,IZlZ7I,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,labban1,success) 
 tdcli_function ({ID = "GetUser",user_id_ = data.sender_user_id_},function(arg,date) 
 tdcli_function ({ID = "GetChatMember",chat_id_ = data.chat_id_,user_id_ = data.sender_user_id_},function(arg,deata) 
 if deata.status_.ID == "ChatMemberStatusCreator" then 
@@ -13338,7 +13338,7 @@ local Status_Gps = database:get(bot_id.."LaricA:Comd:New:rt:User:"..data.chat_id
 local message_edit = database:get(bot_id..'LaricA:message_edit'..data.chat_id_..data.sender_user_id_) or 0
 local Num_Games = database:get(bot_id.."LaricA:Add:Num"..data.chat_id_..data.sender_user_id_) or 0
 local Add_Mem = database:get(bot_id.."LaricA:Add:Memp"..data.chat_id_..":"..data.sender_user_id_) or 0
-local Total_Photp = (IZlZ7I.total_count_ or 0)
+local Total_Photp = (labban1.total_count_ or 0)
 local Texting = {
 'ئمنورني يا وردة 🤣💝',
 "تراا أوفر؟ 🦦🤍 ",
@@ -13364,7 +13364,7 @@ end
 
 if Text and Text:match('(.*)/ideeng') then
 if tonumber(Text:match('(.*)/ideeng')) == tonumber(data.sender_user_id_) then
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,IZlZ7I,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,labban1,success) 
 tdcli_function ({ID = "GetUser",user_id_ = data.sender_user_id_},function(arg,date) 
 tdcli_function ({ID = "GetChatMember",chat_id_ = data.chat_id_,user_id_ = data.sender_user_id_},function(arg,deata) 
 if deata.status_.ID == "ChatMemberStatusCreator" then 
@@ -13392,7 +13392,7 @@ local Status_Gps = database:get(bot_id.."LaricA:Comd:New:rt:User:"..data.chat_id
 local message_edit = database:get(bot_id..'LaricA:message_edit'..data.chat_id_..data.sender_user_id_) or 0
 local Num_Games = database:get(bot_id.."LaricA:Add:Num"..data.chat_id_..data.sender_user_id_) or 0
 local Add_Mem = database:get(bot_id.."LaricA:Add:Memp"..data.chat_id_..":"..data.sender_user_id_) or 0
-local Total_Photp = (IZlZ7I.total_count_ or 0)
+local Total_Photp = (labban1.total_count_ or 0)
 local Texting = {
 'طالع ححلو الوصخ 😂😔💘',
 "بشر لو كيك نتهه😹💘 ",
@@ -13417,7 +13417,7 @@ end
 end
 if Text and Text:match('(.*)/idearp') then
 if tonumber(Text:match('(.*)/idearp')) == tonumber(data.sender_user_id_) then
-tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,IZlZ7I,success) 
+tdcli_function ({ID = "GetUserProfilePhotos",user_id_ = data.sender_user_id_,offset_ = 0,limit_ = 1},function(extra,labban1,success) 
 tdcli_function ({ID = "GetUser",user_id_ = data.sender_user_id_},function(arg,date) 
 tdcli_function ({ID = "GetChatMember",chat_id_ = data.chat_id_,user_id_ = data.sender_user_id_},function(arg,deata) 
 if deata.status_.ID == "ChatMemberStatusCreator" then 
@@ -13445,7 +13445,7 @@ local Status_Gps = database:get(bot_id.."LaricA:Comd:New:rt:User:"..data.chat_id
 local message_edit = database:get(bot_id..'LaricA:message_edit'..data.chat_id_..data.sender_user_id_) or 0
 local Num_Games = database:get(bot_id.."LaricA:Add:Num"..data.chat_id_..data.sender_user_id_) or 0
 local Add_Mem = database:get(bot_id.."LaricA:Add:Memp"..data.chat_id_..":"..data.sender_user_id_) or 0
-local Total_Photp = (IZlZ7I.total_count_ or 0)
+local Total_Photp = (labban1.total_count_ or 0)
 local Texting = {
 'ئمنورني يا وردة 🤣💝',
 "تراا أوفر؟ 🦦🤍 ",
