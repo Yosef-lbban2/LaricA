@@ -5667,7 +5667,7 @@ return false
 end
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n• العضو-› ['..data.first_name_..'](t.me/'..(data.username_ or 'S0DRG')..')'
-status  = '\n• الايدي-› `'..result.sender_user_id_..'`\n• تم حذف لقبه من الكروب'
+status  = '\n• الايدي-› `'..result.sender_user_id_..'`\n• تم حذف لقبه من القروب'
 send(msg.chat_id_, msg.id_, usertext..status)
 https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.sender_user_id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
 end,nil)
@@ -5688,7 +5688,7 @@ send(msg.chat_id_,msg.id_,"• عذرا عزيزي المستخدم هاذا م�
 return false 
 end      
 usertext = '\n• العضو-› ['..result.title_..'](t.me/'..(username or 'S0DRG')..')'
-status  = '\n• تم حذف لقبه من الكروب'
+status  = '\n• تم حذف لقبه من القروب'
 texts = usertext..status
 send(msg.chat_id_, msg.id_, texts)
 https.request("https://api.telegram.org/bot"..token.."/promoteChatMember?chat_id=" .. msg.chat_id_ .. "&user_id=" ..result.id_.."&can_change_info=false&can_delete_messages=false&can_invite_users=false&can_restrict_members=false&can_pin_messages=false&can_promote_members=false")
@@ -7675,7 +7675,7 @@ end
 send(msg.chat_id_, msg.id_,first_name.."\n"..last_name) 
 end,nil)
 end 
-if text==("عدد الكروب") and Addictive(msg) then  
+if text==("عدد القروب") and Addictive(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -7700,7 +7700,7 @@ tdcli_function({ID="GetChannelFull",channel_id_ = msg.chat_id_:gsub("-100","")},
 local IZlZ7I = "• عدد الادمنيه : "..data.administrator_count_..
 "\n\n• عدد المطرودين : "..data.kicked_count_..
 "\n\n• عدد الاعضاء : "..data.member_count_..
-"\n\n• عدد رسائل الكروب : "..(msg.id_/2097152/0.5)..
+"\n\n• عدد رسائل القروب : "..(msg.id_/2097152/0.5)..
 "\n\n• اسم المجموعه : ["..ta.title_.."]"
 send(msg.chat_id_, msg.id_, IZlZ7I) 
 end,nil)
@@ -10246,7 +10246,7 @@ DeleteMessage(msg.chat_id_,Msgs2)
 end,nil)  
 send(msg.chat_id_, msg.id_,'• تم حذف جميع الرسائل المعدله')
 end
-if text == "تنظيف الكروبات" and DevLaricA(msg) then
+if text == "تنظيف القروبات" and DevLaricA(msg) then
 local group = database:smembers(bot_id..'LaricA:Chek:Groups')  
 local w = 0
 local q = 0
@@ -10853,7 +10853,7 @@ end
 for i = 1, #Users do
 database:sadd(bot_id..'LaricA:UsersBot',Users[i])  
 end
-send(msg.chat_id_, msg.id_,'• تم نقل : '..#Groups..' كروب\n• تم نقل : '..#Users..' مشترك \n• من التحديث القديم الى التحديث الجديد')
+send(msg.chat_id_, msg.id_,'• تم نقل : '..#Groups..' قروب\n• تم نقل : '..#Users..' مشترك \n• من التحديث القديم الى التحديث الجديد')
 end
 if text == 'حذف كليشه المطور' and DevLaricA(msg) then
 database:del(bot_id..'LaricA:Text_Dev')
@@ -11217,7 +11217,7 @@ Text = [[
 • اوامر ادمنية المجموعه ...
 ━─━─━─━─━
 • رفع، تنزيل ← مميز
-• تاك للكل ، عدد الكروب
+• تاك للكل ، عدد القروب
 • كتم ، حظر ، طرد ، تقيد
 • الغاء كتم ، الغاء حظر ، الغاء تقيد
 • منع ، الغاء منع 
@@ -11626,7 +11626,7 @@ local Text = '• مرحبا بك في اوامر المطور الجاهزه'
 local keyboard = {
 {'الاحصائيات•','تغيير المطور الاساسي•'},
 {'تفعيل التواصل•','تعطيل التواصل•'},
-{'تنظيف الكروبات•','تنظيف المشتركين•'},
+{'تنظيف القروبات•','تنظيف المشتركين•'},
 {'تفعيل البوت الخدمي•','تعطيل البوت الخدمي•'},
 {'اذاعه خاص•','المطورين•','اذاعه•'},
 {'اذاعه بالتوجيه•','اذاعه بالتوجيه خاص•'},
@@ -11899,7 +11899,7 @@ end,nil)
 end
 return false
 end
-if text == "تنظيف الكروبات•" then
+if text == "تنظيف القروبات•" then
 local group = database:smembers(bot_id..'LaricA:Chek:Groups')  
 local w = 0
 local q = 0
@@ -13571,7 +13571,7 @@ local Teext =[[
 • اوامر ادمنية المجموعه ...
 ━─━─━─━─━
 • رفع، تنزيل ← مميز
-• تاك للكل ، عدد الكروب
+• تاك للكل ، عدد القروب
 • كتم ، حظر ، طرد ، تقيد
 • الغاء كتم ، الغاء حظر ، الغاء تقيد
 • منع ، الغاء منع 
