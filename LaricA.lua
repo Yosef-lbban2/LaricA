@@ -10389,8 +10389,8 @@ return false
 end
 if AddChannel(msg.sender_user_id_) == false then
 local MRSoOoFi = database:get(bot_id.."AL:AddS0FI:stats") or "لم يتم التحديد"
-if LaRiCaTeam then
-send(msg.chat_id_, msg.id_,'['..LaRiCaTeam..']')
+if yousef_labban1 then
+send(msg.chat_id_, msg.id_,'['..yousef_labban1..']')
 else
 send(msg.chat_id_, msg.id_,'• لا تستطيع استخدام البوت \n•  يرجى الاشتراك بالقناه اولا \n•  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
@@ -10414,12 +10414,12 @@ local Text =[[
 • كشف الارتباط
 • كشف الحيوان
 • نسبه الغباء
-• العاب متطوره - العاب لاريكا](t.me/LaRiCaTeam)
+• العاب متطوره - العاب لاريكا](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ' ˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.', url="t.me/LaRiCaTeam"},
+{text = ' ˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.', url="t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -10547,7 +10547,7 @@ if audios.Info == true then
 local Text ='• تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.',url="t.me/LaRiCaTeam "}},
+{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.',url="t.me/yousef_labban1 "}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10562,7 +10562,7 @@ if audios.Info == true then
 local Text ='• تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.',url="t.me/LaRiCaTeam"}},
+{{text = '˛ 𝗅𝖺𝗋𝗂𝖼𝖺 𝗍𝖾𝖺𝗆 🦇.',url="t.me/yousef_labban1"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice='..URL.escape(audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10915,7 +10915,7 @@ keyboard.inline_keyboard = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '  LaRiCa Team  ', url="t.me/LaRiCaTeam"}},
+{{text = '  LaRiCa Team  ', url="t.me/yousef_labban1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
@@ -10941,23 +10941,23 @@ if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or tex
 local url,res = https.request('https://evzxar.ml/LaricA.php?id='..msg.sender_user_id_)
 data = JSON.decode(url)
 if data.Ch_Member.LaricA ~= true then
-send(msg.chat_id_,msg.id_,'• لا يمكنك استخدام البوت\n• عليك الاشتراك في قناة السورس\n• لتتمكن من استخدام الاوامر \n• CH ~ [@LaRiCaTeam]')   
+send(msg.chat_id_,msg.id_,'• لا يمكنك استخدام البوت\n• عليك الاشتراك في قناة السورس\n• لتتمكن من استخدام الاوامر \n• CH ~ [@yousef_labban1]')   
 return false 
 end
 Text = [[
-*𝗝ْ𝗨ِst #َ𝗚𝗿ِ𝗼𝘂ِ𝗽َُ!ْ𝗦 𝗧ِ𝘂ِ𝗺ّ𝗯َ𝗹َُ!r⤹* [◜𝗟𝗮ََِ𝗥ِ!َْ𝗖𝗮 ُ𝗧َ𝗘ِ𝗮َِ𝗺 🦂](t.me/LaRiCaTeam)
+*𝗝ْ𝗨ِst #َ𝗚𝗿ِ𝗼𝘂ِ𝗽َُ!ْ𝗦 𝗧ِ𝘂ِ𝗺ّ𝗯َ𝗹َُ!r⤹* [◜𝗟𝗮ََِ𝗥ِ!َْ𝗖𝗮 ُ𝗧َ𝗘ِ𝗮َِ𝗺 🦂](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝒐𝙐𝒓𝘾𝒆 𝙇𝒂𝙍𝒊𝘾𝒂',url="https://t.me/LaRiCaTeam"},
+{text = '𝙎𝒐𝙐𝒓𝘾𝒆 𝙇𝒂𝙍𝒊𝘾𝒂',url="https://t.me/yousef_labban1"},
 },
 {
 {text = '𝘿𝒆𝙑𝒆𝙡𝒐𝙋𝒆𝙍',url="https://t.me/labban1"},
 },
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LaRiCaTeam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yousef_labban1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 return false
 end
 
@@ -11035,7 +11035,7 @@ local Text =[[
 • 𝖲𝖾𝖭𝖽 { م3 } ←- 𝖬𝖺𝗇𝖠𝗀𝖾𝗋𝗌 𝖮𝗋𝖽𝖾𝗋𝗌 .
 • 𝖲𝖾𝖭𝖽 { م4 } ←- 𝖢𝗈𝗇𝖲𝗍𝗋𝖴𝖼𝗍𝗈𝗋𝗌 𝖮𝗋𝖽𝖾𝗋𝗌 .
 • 𝖲𝖾𝖭𝖽 { م5 } ←- 𝖣𝖾𝖵𝖾𝗅𝗈𝖯𝖾𝗋 𝖮𝗋𝖽𝖾𝗋𝗌 .
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 
 ]]
 keyboard = {} 
@@ -11099,7 +11099,7 @@ Text = [[
 ━─━─━─━─━
 • تفعيل المسح التلقائي
 • تعطيل المسح التلقائي
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11138,7 +11138,7 @@ Text = [[
 • كشف الحيوان
 • نسبه الغباء
 • العاب متطوره - العاب لاريكا
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11192,7 +11192,7 @@ Text = [[
 • الجهات
 • الاشعارات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11249,7 +11249,7 @@ Text = [[
 • المطرودين ، البوتات ، الصوره
 • الصلاحيات ، الرابط
 ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11298,7 +11298,7 @@ Text = [[
 • اضف ، حذف ← { رد }
 • تنظيف ← { عدد }
 ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11335,7 +11335,7 @@ Text = [[
 • الاوامر المضافه ، مسح الاوامر المضافه
 • تنزيل جميع الرتب
 ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11387,7 +11387,7 @@ Text = [[
 • رفع/تنزيل مدير عام
 • رفع/تنزيل ادمن عام
   ━═━═━═━
-[٬ ??𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ ??𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 send(msg.chat_id_, msg.id_,Text)
 return false
@@ -11430,7 +11430,7 @@ local Text = '• تم تفعيل البوت في المجموعة'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '  معرفة المزيد ؟',url="https://t.me/LaRiCaTeam"},
+{text = '  معرفة المزيد ؟',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11568,7 +11568,7 @@ local Text = '• تم تفعيل البوت في المجموعة'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '  معرفة المزيد ؟',url="https://t.me/LaRiCaTeam"},
+{text = '  معرفة المزيد ؟',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11679,19 +11679,19 @@ return false
 end
 if text == 'قناة السورس 📡 .' then
 Text = [[
-*𝗝ْ𝗨ِst #َ𝗚𝗿ِ𝗼𝘂ِ𝗽َُ!ْ𝗦 𝗧ِ𝘂ِ𝗺ّ𝗯َ𝗹َُ!r⤹* [◜𝗟𝗮ََِ𝗥ِ!َْ𝗖𝗮 ُ𝗧َ𝗘ِ𝗮َِ𝗺 🦂](t.me/LaRiCaTeam)
+*𝗝ْ𝗨ِst #َ𝗚𝗿ِ𝗼𝘂ِ𝗽َُ!ْ𝗦 𝗧ِ𝘂ِ𝗺ّ𝗯َ𝗹َُ!r⤹* [◜𝗟𝗮ََِ𝗥ِ!َْ𝗖𝗮 ُ𝗧َ𝗘ِ𝗮َِ𝗺 🦂](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝙎𝒐𝙐𝒓𝘾𝒆 𝙇𝒂𝙍𝒊𝘾𝒂',url="https://t.me/LaRiCaTeam"},
+{text = '𝙎𝒐𝙐𝒓𝘾𝒆 𝙇𝒂𝙍𝒊𝘾𝒂',url="https://t.me/yousef_labban1"},
 },
 {
 {text = '𝘿𝒆𝙑𝒆𝙡𝒐𝙋𝒆𝙍',url="https://t.me/labban1"},
 },
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LaRiCaTeam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yousef_labban1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'رموز مزخرفة 🏷️' then
 Text = [[
@@ -11701,7 +11701,7 @@ Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '   معرفة المزيد ؟',url="t.me/LaRiCaTeam"},
+{text = '   معرفة المزيد ؟',url="t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -11727,7 +11727,7 @@ Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '   معرفة المزيد ؟',url="t.me/LaRiCaTeam"},
+{text = '   معرفة المزيد ؟',url="t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12305,7 +12305,7 @@ gk = https.request('https://black-source.tk/BlackTeAM/Horoscopes.php?br='..URL.e
 br = JSON.decode(gk)
 x = {} 
 x.inline_keyboard = {
-{{text = '• LaRiCa 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaRiCa 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(br.ok.hso)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(x)) 
 end
@@ -13483,7 +13483,7 @@ local Teext =[[
 ━─━─━─━─━
 • تفعيل المسح التلقائي
 • تعطيل المسح التلقائي
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13540,7 +13540,7 @@ local Teext =[[
 • الجهات
 • الاشعارات
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13603,7 +13603,7 @@ local Teext =[[
 • المطرودين ، البوتات ، الصوره
 • الصلاحيات ، الرابط
 ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13658,7 +13658,7 @@ local Teext =[[
 • اضف ، حذف ← { رد }
 • تنظيف ← { عدد }
 ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13701,7 +13701,7 @@ local Teext =[[
 • الاوامر المضافه ، مسح الاوامر المضافه
 • تنزيل جميع الرتب
 ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13774,7 +13774,7 @@ local Teext =[[
 • رفع/تنزيل مدير عام
 • رفع/تنزيل ادمن عام
   ━─━─━─━─━
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13802,7 +13802,7 @@ end
 elseif Text and Text:match('(.*)/help') then
 if tonumber(Text:match('(.*)/help')) == tonumber(data.sender_user_id_) then
 local Teext =[[
-𝙒𝙚𝙡𝘾𝙤𝙢𝙚 𝙏𝙤 𝙎𝙤𝙪𝙍𝙘𝙚 [𓌹 𝘓𝘢𝘙𝘪𝘤𝘢 𓌺 🦇](t.me/LaRiCaTeam)
+𝙒𝙚𝙡𝘾𝙤𝙢𝙚 𝙏𝙤 𝙎𝙤𝙪𝙍𝙘𝙚 [𓌹 𝘓𝘢𝘙𝘪𝘤𝘢 𓌺 🦇](t.me/yousef_labban1)
 𝙃𝙚𝙧𝙚 𝙞𝙎 𝙩𝙃𝙚 𝘾𝙤𝙉𝙩𝙧𝙤𝙡 𝙋𝙖𝙉𝙚𝙡 ⤵️ 
 ]]
 keyboard = {} 
@@ -13846,7 +13846,7 @@ local Teext =[[
 • كشف الحيوان
 • نسبه الغباء
 • العاب متطوره - العاب لاريكا
-[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/LaRiCaTeam)
+[٬ 𝙊𝙗𝙖 𝙇𝙖𝙍𝙞𝙘𝙖 🕷 ٫](t.me/yousef_labban1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13879,7 +13879,7 @@ local idchci = "-100"..idch
 local animation = DAata:match("^animation(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="• تم اللغاء منعها بنجاح"
 inline = {
-{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -13890,7 +13890,7 @@ local idchci = database:get(bot_id.."LaricA:Filter:msg")
 local photo = DAata:match("^pito(.*)$")
 local Text ="• تم اللغاء منعها بنجاح"
 inline = {
-{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -13902,7 +13902,7 @@ local idchci = "-100"..idch
 local Sticker = DAata:match("^Sticker(.*)$"):gsub('chatid',''):gsub('chatid',''):gsub(idch,''):gsub('-100','')
 local Text ="• تم اللغاء منعه بنجاح"
 inline = {
-{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -13912,7 +13912,7 @@ if DAata and DAata:match("^delallSticker(.*)$") and Addictive(data) then
 local delallSticker = DAata:match("^delallSticker(.*)$")
 local Text ="• تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -13925,7 +13925,7 @@ if DAata and DAata:match("^delallanimation(.*)$") and Addictive(data) then
 local delallmation = DAata:match("^delallanimation(.*)$")
 local Text ="• تم اللغاء منع كل المتحركات"
 inline = {
-{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -13938,7 +13938,7 @@ if DAata and DAata:match("^delallph(.*)$") and Addictive(data) then
 local delallph = DAata:match("^delallph(.*)$")
 local Text ="• تم اللغاء منع كل الصور"
 inline = {
-{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/LaRiCaTeam'}},
+{{text = '• LaricA 𝖲𝗈𝗎𝗋𝖼𝖾  .',url='http://t.me/yousef_labban1'}},
 }
 https.request("https://api.telegram.org/bot"..token.."/deleteMessage?chat_id="..Chat_id.."&message_id="..msg_idd)
 send_inlin_key(Chat_id,Text,inline)
@@ -14101,7 +14101,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇نسبه
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendnum..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendnum..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14122,7 +14122,7 @@ local Text = '⌯ اليك النتائج الخـاصة :\n\n⌯ نسبه ال�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendnum..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendnum..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14143,7 +14143,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇ نسب�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendnuj..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendnuj..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14164,7 +14164,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇ نسب�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendnuj..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendnuj..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14185,7 +14185,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇ نوع 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ''..sendnmj..' ‹‹-',url="https://t.me/LaRiCaTeam"},
+{text = ''..sendnmj..' ‹‹-',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14206,7 +14206,7 @@ local Text = '📥┇ اليك النتائج الخـاصة :\n\n📮┇ نوع
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = ''..sendnuk..' ‹‹-',url="https://t.me/LaRiCaTeam"},
+{text = ''..sendnuk..' ‹‹-',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14227,7 +14227,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇نسبه
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendnnk..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendnnk..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14248,7 +14248,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇نسبه
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendzff..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendzff..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14269,7 +14269,7 @@ local Text = '📥┇اليك النتائج الخـاصة :\n\n📮┇نسبه
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '• '..sendhen..'%',url="https://t.me/LaRiCaTeam"},
+{text = '• '..sendhen..'%',url="https://t.me/yousef_labban1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -14455,7 +14455,7 @@ if (data.ID == "UpdateOption" and data.value_.value_ == "Ready") then
 print("\27[34m"..[[
 >> The Bot is Running
 >> Bot source > LaricA
->>Source channel > @LaRiCaTeam
+>>Source channel > @yousef_labban1
 >>Source developer > @labban1
 ╔╗─╔══╗╔═╗╔══╗╔═╗╔══╗
 ║║─║╔╗║║╬║╚║║╝║╔╝║╔╗║
